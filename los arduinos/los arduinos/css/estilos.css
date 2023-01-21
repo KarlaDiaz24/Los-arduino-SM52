@@ -1,0 +1,136 @@
+
+:root{
+    --color-principal: blue;
+    --color-negro: #444A47;
+    --color-fondo: #F7F9FD;
+    --color-footer: #151515;
+}
+
+*{
+    padding: 0px;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    align-items: center;
+}
+
+.container{
+    width: 1122px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* Para el boton */
+.boton{
+    background-color:rgb(219, 177, 231);
+    color:rgb(74, 136, 194);
+    text-decoration: none;
+    padding: 1rem 1rem;
+    margin-top: 5rem;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    border: none; 
+    align-items: center;
+}
+/* Cambio de color a pasar el cursor por el boton */
+.boton:hover{
+    background-color:rgb(223, 132, 182);
+    color: #ffffff;
+}
+
+.hero{
+    background-image: url(/img/arduino.png);
+    height: 35rem;
+    /* Para no repetir las imagenes */
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
+    position: relative;
+
+}
+.contenido_hero{
+    position: absolute;
+    background-color: rgba(0 0 0/50%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/*=================================
+    Estilo del Footer
+==================================*/
+
+footer{
+    background: #151515;
+    padding: 80px 0px;
+}
+
+footer .foo-fila{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .foo-fila .foo-columna{
+    width: 50%;
+}
+
+footer .foo-fila .foo-columna h2{
+    color: #E3E3E3;
+    line-height: 40px;
+
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+footer .foo-fila .foo-columna ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .foo-fila .foo-columna  ul li{
+    width: 50%;
+    margin-bottom: 16px;
+}
+
+footer .foo-fila .foo-columna ul li a{
+    color: #E3E3E3;
+    font-size: 15px;
+}
+
+footer .foo-fila .foo-columna  ul li a:hover{
+    color: var(--color-principal);
+    text-decoration: underline;
+}
+
+
+.foo-copy{
+    background: #000000;
+    padding: 40px 0px;
+}
+
+.foo-copy p{
+    text-align: center;
+    color: #E3E3E3;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
